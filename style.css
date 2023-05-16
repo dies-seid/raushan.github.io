@@ -89,3 +89,27 @@ body {
 .photo-container #next-button:hover {
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 600px) {
+    .photo-container {
+        padding: 10px; /* Adjust the padding for smaller screens */
+    }
+
+    .photo-wrapper img {
+        max-height: 50vh; /* Reduce the image height for smaller screens */
+    }
+
+    .photo-container #photo-info {
+        font-size: 14px; /* Decrease the font size for smaller screens */
+        width: 400px;
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack the buttons vertically on smaller screens */
+        margin-top: 10px; /* Reduce the margin between the buttons and the photo info */
+    }
+
+    .button-container button {
+        margin: 5px 0; /* Adjust the margin for the stacked buttons */
+    }
+}
